@@ -1,2 +1,4 @@
 # TP1_POO
-TP1 resuelto de Prorgamacion Orientada a Objetos
+Alumno : Tomas Resnik
+Legajo : 190168
+
