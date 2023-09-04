@@ -95,4 +95,19 @@ public class Lista_doble {
             System.out.println("elemento Insertado\n");
         }
     }
+
+    public void l_mostrar(){
+        if (inicio == null){
+            System.out.println("La lista esta vacia\n");
+        } else {
+            Nodo_doble actual = inicio;
+            String acumulador = "Contenido de la lista: ";
+            while (actual.n_recuperar_siguiente() != null){
+                acumulador += " " + actual.n_recuperar();
+                actual = actual.n_recuperar_siguiente();
+            }
+            acumulador += " " + actual.n_recuperar();
+            System.out.println(acumulador);
+        }
+    }
 }
