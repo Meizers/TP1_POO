@@ -1,5 +1,5 @@
 import java.util.Scanner;
-        import ar.edu.unlu.poo.lista.Lista;
+import ar.edu.unlu.poo.lista.Lista;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,6 +13,7 @@ public class Main {
             System.out.println("4. Eliminar elemento de la lista");
             System.out.println("5. Recuperar elemento de la lista");
             System.out.println("6. Insertar elemento en la lista");
+            System.out.println("7. Mostrar lista");
             System.out.println("0. Salir");
             System.out.print("Seleccione una opción: ");
 
@@ -30,13 +31,11 @@ public class Main {
                     System.out.print("Ingrese el elemento a agregar: ");
                     Object elementoAgregar = scanner.nextInt();
                     lista.l_agregar(elementoAgregar);
-                    System.out.println("Elemento agregado al final de la lista.");
                     break;
                 case 4:
                     System.out.print("Ingrese el elemento a eliminar: ");
                     Object elemento = scanner.nextInt();
                     lista.l_borrar(elemento);
-                    System.out.println("Elemento eliminado de la lista.");
                     break;
                 case 5:
                     System.out.print("Ingrese la posición del elemento a recuperar: ");
@@ -59,6 +58,9 @@ public class Main {
                     } else {
                         System.out.println("Posición inválida.");
                     }
+                    break;
+                case 7:
+                    lista.l_mostrar();
                     break;
                 case 0:
                     System.out.println("Saliendo del programa.");
