@@ -27,5 +27,19 @@ public class Main {
                 password.set_longitud(8); // Regenerar contraseñas débiles con longitud predeterminada
             }
         }
+
+        System.out.println("\n");
+
+        System.out.println("Contraseñas fuertes generadas:");
+        for (Password password : passwords) {
+            password.generarContraseñaFuerte();
+            System.out.print(password.get_Password() + " - ");
+            if (password. Es_fuerte()) {
+                System.out.println("Fuerte");
+            } else {
+                System.out.println("Débil");
+                password.set_longitud(8); // Regenerar contraseñas débiles con longitud predeterminada
+            }
+        }
     }
 }
