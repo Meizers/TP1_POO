@@ -68,4 +68,14 @@ public class Password {
         longitud = nueva_longitud;
         generar_Password();
     }
+    public void generarContraseñaFuerte() {
+        if (Es_fuerte() == true){
+            return;
+        } else {
+            generar_Password();
+            while (!Es_fuerte()) {
+                generar_Password();
+            }
+        }
+    }
 }
